@@ -20,6 +20,8 @@ object_script.*.Debug
 *.pro.user.*
 *.qbs.user
 *.qbs.user.*
+*.txt.user
+*.txt.user.user
 *.moc
 moc_*.cpp
 moc_*.h
@@ -28,7 +30,7 @@ ui_*.h
 *.qmlc
 *.jsc
 Makefile*
-*build-*
+*build*
 *.qm
 *.prl
 
