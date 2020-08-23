@@ -7,6 +7,7 @@
 class QVBoxLayout;
 class QHBoxLayout;
 class QLabel;
+class YGame;
 
 Q_DECLARE_LOGGING_CATEGORY(mainWidget)
 
@@ -26,5 +27,8 @@ private:
     QLabel*         _lbGame2D;
     QLabel*         _lbGame3D;
     QLabel*         _lbConsole;
+
+    void initGame();
+    YGame*          _g;
 };
 #endif // MAINWIDGET_H

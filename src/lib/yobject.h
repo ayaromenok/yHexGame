@@ -10,7 +10,7 @@ class YObject : public QObject
     Q_OBJECT
 public:
     explicit YObject(QObject *parent = nullptr);
-    ~YObject(();
+    ~YObject();
 
 signals:
 

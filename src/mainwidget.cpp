@@ -1,13 +1,15 @@
 #include "mainwidget.h"
 #include <QtWidgets>
 
+#include "game/ygame.h"
 
 Q_LOGGING_CATEGORY(mainWidget, "main.widget")
 
 MainWidget::MainWidget(QWidget *parent)
     : QWidget(parent) {
     initLayout();
-    //dumpObjectTree();
+    initGame();
+    dumpObjectTree();
 }
 
 MainWidget::~MainWidget() {
@@ -50,3 +52,11 @@ MainWidget::initLayout() {
     _loMain->addLayout(_loGame);
     _loMain->addWidget(_lbStatusBar);
 }
+
+void
+MainWidget::initGame() {
+    qCDebug(mainWidget) << __FUNCTION__<<__LINE__;
+    _g = new YGame();
+    _g->setObjectName("game/Main");
+    _g->setParent(this);
+}//initGame

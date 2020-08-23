@@ -34,6 +34,16 @@ if(ANDROID)
     mainwidget.h
     lib/yobject.h
     lib/yobject.cpp
+    lib/yhexobject.h
+    lib/yhexobject.cpp
+    lib/ylandobject.h
+    lib/ylandobject.cpp
+    lib/yconstructionobject.h
+    lib/yconstructionobject.cpp
+    lib/yunitobject.h
+    lib/yunitobject.cpp
+    game/ygame.h
+    game/ygame.cpp
   )
 else()
   add_executable(yHexGame
@@ -42,6 +52,16 @@ else()
     mainwidget.h
     lib/yobject.h
     lib/yobject.cpp
+    lib/yhexobject.h
+    lib/yhexobject.cpp
+    lib/ylandobject.h
+    lib/ylandobject.cpp
+    lib/yconstructionobject.h
+    lib/yconstructionobject.cpp
+    lib/yunitobject.h
+    lib/yunitobject.cpp
+    game/ygame.h
+    game/ygame.cpp
   )
 endif()
 
