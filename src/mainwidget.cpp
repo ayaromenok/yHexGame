@@ -29,10 +29,18 @@ MainWidget::initLayout() {
     _lbStatusBar->setObjectName("label/StatusBar");
     _lbGame2D = new QLabel("Game 2D");
     _lbGame2D->setObjectName("label/Game 2D");
+    _lbGame2D->setFrameStyle(QFrame::Panel);
+    _lbGame2D->setFrameShadow(QFrame::Raised);
+    _lbGame2D->setMinimumSize(240,240);
     _lbGame3D = new QLabel("Game 3D");
     _lbGame3D->setObjectName("label/Game 3D");
+    _lbGame3D->setFrameStyle(QFrame::Panel);
+    _lbGame3D->setFrameShadow(QFrame::Raised);
+    _lbGame3D->setMinimumSize(240,240);
     _lbConsole = new QLabel("Console");
     _lbConsole->setObjectName("label/Console");
+    _lbConsole->setFrameStyle(QFrame::Panel);
+    _lbConsole->setFrameShadow(QFrame::Raised);
 
     _loGame->addWidget(_lbGame2D);
     _loGame->addWidget(_lbGame3D);
