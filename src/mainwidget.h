@@ -2,14 +2,17 @@
 #define MAINWIDGET_H
 
 #include <QWidget>
+#include <QLoggingCategory>
+
 class QVBoxLayout;
 class QHBoxLayout;
 class QLabel;
 
+Q_DECLARE_LOGGING_CATEGORY(mainWidget)
+
 class MainWidget : public QWidget
 {
     Q_OBJECT
-
 public:
     MainWidget(QWidget *parent = nullptr);
     ~MainWidget();

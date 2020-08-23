@@ -1,9 +1,13 @@
 #include "mainwidget.h"
 #include <QtWidgets>
 
+
+Q_LOGGING_CATEGORY(mainWidget, "main.widget")
+
 MainWidget::MainWidget(QWidget *parent)
     : QWidget(parent) {
     initLayout();
+    //dumpObjectTree();
 }
 
 MainWidget::~MainWidget() {
@@ -11,6 +15,7 @@ MainWidget::~MainWidget() {
 
 void
 MainWidget::initLayout() {
+    qCDebug(mainWidget) << __FUNCTION__<<__LINE__;
     setGeometry(0,0,640,320);
 
     _loMain = new QVBoxLayout(this);
@@ -36,6 +41,4 @@ MainWidget::initLayout() {
     _loMain->addWidget(_lbMenu);
     _loMain->addLayout(_loGame);
     _loMain->addWidget(_lbStatusBar);
-
-    //dumpObjectTree();
 }
