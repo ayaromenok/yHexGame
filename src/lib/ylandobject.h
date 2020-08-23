@@ -6,7 +6,8 @@
 class YLandObject : public YHexObject
 {
 public:
-    YLandObject();
+    YLandObject(YHexObject *parent = nullptr);
+    ~YLandObject();
 };
 
 #endif // YLANDOBJECT_H

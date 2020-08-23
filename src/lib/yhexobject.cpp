@@ -1,6 +1,9 @@
 #include "lib/yhexobject.h"
 
-YHexObject::YHexObject()
-{
+YHexObject::YHexObject(YObject *parent) : YObject(parent){
 
-}
+}//YHexObject
+
+YHexObject::~YHexObject(){
+
+}//~YHexObject

@@ -1,6 +1,9 @@
 #include "lib/ylandobject.h"
 
-YLandObject::YLandObject()
-{
+YLandObject::YLandObject(YHexObject *parent) : YHexObject(parent){
 
-}
+}//YLandObject
+
+YLandObject::~YLandObject(){
+
+}//~YLandObject

@@ -1,12 +1,13 @@
 #ifndef YCONSTRUCTIONOBJECT_H
 #define YCONSTRUCTIONOBJECT_H
 
-#include "lib/yobject.h"
+#include "lib/yhexobject.h"
 
-class YConstructionObject : public YObject
+class YConstructionObject : public YHexObject
 {
 public:
-    YConstructionObject();
+    YConstructionObject(YHexObject *parent = nullptr);
+    ~YConstructionObject();
 };
 
 #endif // YCONSTRUCTIONOBJECT_H

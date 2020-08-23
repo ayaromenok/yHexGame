@@ -6,7 +6,8 @@
 class YHexObject : public YObject
 {
 public:
-    YHexObject();
+    YHexObject(YObject *parent = nullptr);
+    ~YHexObject();
 };
 
 #endif // YHEXOBJECT_H

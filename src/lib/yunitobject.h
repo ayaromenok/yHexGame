@@ -6,7 +6,8 @@
 class YUnitObject : public YObject
 {
 public:
-    YUnitObject();
+    YUnitObject(YObject *parent = nullptr);
+    ~YUnitObject();
 };
 
 #endif // YUNITOBJECT_H
